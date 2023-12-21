@@ -6,7 +6,7 @@ function Row({title,fetchUrl,isPoster}) {
 
   //state
   const[allMovies,setAllMovies]=useState()
-    console.log(fetchUrl);
+   // console.log(fetchUrl);
       const base_url = "https://image.tmdb.org/t/p/original/";
 
     const fetchData=async()=>{
@@ -14,7 +14,7 @@ function Row({title,fetchUrl,isPoster}) {
      /*  console.log(data.results); */
       setAllMovies(data.results)
     }
-    console.log(allMovies);
+    //console.log(allMovies);
 
     useEffect(()=>{
       fetchData()
